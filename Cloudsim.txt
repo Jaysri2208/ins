@@ -1,0 +1,21 @@
+1. Download Cloudsim 5.0 from https://github.com/Cloudslab/cloudsim/releases/tag/5.0 (In lab machines, the cloudsim 5.0 is available in D:/Soft – Don’t download from internet)
+
+2.Eclipse IDE for java developer-juno -unzip-eclipse.exe
+
+2. Add common math library
+(Jar files given in canvas – Don’t download)
+https://commons.apache.org/proper/commons-math/download_math.cgi 
+jar file select - unzipped
+
+
+3. Open Eclipse. Select New > Project > Java Project-name,loc-cloussim5.0
+Give a name for the project and Select Java Execution environment
+librarires -find the jar files listed
+
+
+4. Once you click finish, the cloudsim project becomes viewable in your package explorer as shown below
+5.Right click on the project name “Cloudsim” – Select “Properties” – libraries – Add External JARs and select all the JAR files present in the common math folder, you downloaded and unzipped earlier
+ 
+error-projex-project-properties-java compiler-enable-1.7-yes
+
+

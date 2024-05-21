@@ -1,0 +1,25 @@
+
+ eval of soc networking tool how to deploy , how many req comes to datacentre 
+ 
+ 
+ • Download Cloud Analyst for NetBeans https://sourceforge.net/projects/cloudanalystnetbeans/
+
+To implement the cloud analyst using NetBeans.
+ • Download NetBeans – from under Installers and Packages – windows x64 exe
+ • Click on the Installer downloaded to start NetBeans installation
+ 
+ -run -exe
+ 
+ • Open NetBeans
+ • Click ‘Open Project’
+Meanwhile, extract downloaded Cloud Analyst Zip folder and select the same
+ 
+• Simply run the project by clicking green color play button in the top
+  
+• You will end up at this screen
+  
+• Configure simulation button
+• Once the simulation setup is done, you may click Done
+• Then Click “Run Simulation”
+ 
+user bases are sending the req to the created datacentres

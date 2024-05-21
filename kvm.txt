@@ -1,0 +1,51 @@
+egrep -c ' lm ' /proc/cpuinfo 
+
+uname -a
+ 
+lsmod | grep kvm
+ 
+sudo apt-get install
+a.	qemu-kvm
+b.	libvirt-bin
+c.	bridge-utils
+d.	virt-manager
+e.	qemu-system
+ 
+ 
+
+a.	sudo service libvirtd restart
+ 
+b.	virsh list - Displays no of Virtual machine running
+ 
+c.	virsh - Connecting to Virtualization Interactive Terminal
+ 
+d.	version - Getting version of libvirt & QEMU
+ 
+e.	nodeinfo - Getting Node information
+
+ 
+virsh net-list --all
+ 
+ip link show type bridge
+ 
+ip link show master virbr0
+ 
+ip link add br0 type bridge - Adds a Bridge
+ 
+sudo ip a | more
+ 
+sudo ip link set ens3 up
+ 
+sudo ip link set ens3 master br0
+ 
+sudo ip address add dev br0 10.184.43.157/24 - Assigning static ip
+ 
+sudo ip addr show br0
+ 
+sudo ip addr flush dev ens3 - Flush the IP addressfrom the interface
+ 
+sudo ip link set br0 up promise on - Make the interfaces up
+ 
+sudo ip link set ens3 up
+ 
+sudo ip route add default via 10.184.43.1

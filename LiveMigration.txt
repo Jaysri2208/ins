@@ -1,0 +1,40 @@
+Live
+
+1. Download XEN Center application.
+2. Click on add new server option.
+3. A dialog box to add a new server will appear.
+4. Type in the IP address as 172.17.17.140 and the username is root and
+passwordare tceit@123.
+5. Click add.
+6. The server will be connected.
+7. Right click on the xenserver1 and select new VM.
+8. Select the VM template (Ubuntu 12.04) and select the iso image file of ubuntu.
+9. Name the virtual machine and add description and allocate memory and processor.
+10. Click next.
+11. Load the OS installation media and click next.
+12. After loading the VM, click on add new server.
+13. Add the IP address as 172.17.17.101 and the username is root and password is
+tceit@1234.
+14. The server 2 will be connected.
+15. The xenserver2 will then be started.
+16. Select the VM created in xenserver1 and right click and select move VM.
+17.Select xenserver2 from the drop-down list and click okay.
+The VM from xenserver1 will be then migrated to xenserver2.
+
+Cold
+
+Procedure:
+1. Open Virtual Box and create a new VM with Linux.
+2. Install OpenJDK and create a Java program
+3. Take a snapshot of the VM and copy the VDI onto a pen drive
+4. Use the pen drive in a different machine and instantiate the VM from the snapshot taken
+5. Execute the Java program in the new machine
+
+Near vm ->snapshot
+
+Ls
+touch testfile
+Vi testfile
+Sudo init 0
+
+

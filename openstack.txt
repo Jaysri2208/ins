@@ -1,0 +1,36 @@
+date
+sudo nano /etc/resolv.conf -->10.184.0.11 
+sudo useradd -s /bin/bash -d/opt/stack -m stack
+sudo chmod +x /opt/stack 
+sudo echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
+sudo -u stack -i
+sudo apt install git sudo
+git clone https://opendev.org/openstack/devstack -b stable/zed
+cd devstack/
+
+[[local | localrc]]
+
+ADMIN_PASSWORD=admin
+
+DATABASE_PASSWORD=ŞADMIN_PASSWORD
+
+RABBIT_PASSWORD=SADMIN_PASSWORD
+
+SERVICE_PASSWORD=ŞADMIN_PASSWORD
+
+HOST_IP=92.168.42.243
+
+disable_service etcd3
+
+./stack.sh
+
+
+
+a.	Type ip in mozilla ->> open stack will be opened
+
+
+b.	To launch the network: Go to network topology -> network name --> network addredd 10.10.10.0/24 --> ipv4 -->gateway ip 10.10.10.0/24 ->> enable dhcp checkbox--> click on create.
+c.	Instance --> Launch instance-->instance name -->next --> click no for new volume --> select os --> select size of the machine --> select the network as private the we created before --> then click launch the instance --> vm is created and instance comes to running state
+ 
+ 
+
